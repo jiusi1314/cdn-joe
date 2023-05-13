@@ -1,0 +1,179 @@
+/* 首页样式 */
+.joe_index__banner {
+  display: flex;
+  /* background: var(--background); */
+  border-radius: var(--radius-wrap);
+  /* padding: 15px; */
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px;
+  transition: .35s;
+}
+
+.joe_index__title {
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius-wrap);
+  padding: 0px 15px;
+  background: var(--background);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px;
+}
+
+.joe_index__title-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--routine);
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+}
+
+.joe_index__title-title .item {
+  cursor: pointer;
+  margin-right: 20px;
+  user-select: none;
+  transition: color 0.35s;
+}
+
+.joe_index__title-title .item.active {
+  color: var(--theme);
+}
+
+.joe_index__title-title .line {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--theme);
+  transition: left 0.35s, width 0.35s;
+}
+
+.joe_index__title-notice {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  height: 40px;
+}
+
+.joe_index__title-notice svg {
+  min-width: 20px;
+  min-height: 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.joe_index__title-notice a {
+  color: var(--minor);
+  line-height: 20px;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.35s;
+}
+
+.joe_index__title-notice a:hover {
+  color: var(--theme);
+}
+
+.swiper-container {
+  min-width: 0;
+  flex: 1;
+  height: 335px;
+  --swiper-theme-color: #fff;
+  border-radius: var(--radius-inner);
+}
+
+.swiper-container .item {
+  display: block;
+  height: 335px;
+  border-radius: var(--radius-inner);
+}
+
+.swiper-container .item .thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.35s;
+}
+
+.swiper-container .item .thumbnail:hover {
+  opacity: 0.85;
+}
+
+.swiper-container .item .title {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.swiper-container .item .icon {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+  opacity: 0.5;
+}
+
+.swiper-container.swiper-container-horizontal .swiper-pagination-bullets {
+  bottom: unset;
+  left: unset;
+  width: auto;
+  right: 10px;
+  top: 10px;
+}
+
+.swiper-container.swiper-container-vertical .swiper-button-next,
+.swiper-container.swiper-container-vertical .swiper-button-prev {
+  display: none;
+}
+
+.swiper-container .swiper-button-next,
+.swiper-container .swiper-button-prev {
+  background: rgba(0, 0, 0, 0.1);
+  transition: background 0.35s, right 0.35s, left 0.35s;
+  border-radius: 2px;
+}
+
+.swiper-container .swiper-button-next:hover,
+.swiper-container .swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.swiper-container .swiper-button-next::after,
+.swiper-container .swiper-button-prev::after {
+  font-size: 20px;
+}
+
+.swiper-container .swiper-button-next {
+  right: -27px;
+}
+
+.swiper-container .swiper-button-prev {
+  left: -27px;
+}
+
+.swiper-container:hover .swiper-button-next {
+  right: 10px;
+}
+
+.swiper-container:hover .swiper-button-prev {
+  left: 10px;
+}
